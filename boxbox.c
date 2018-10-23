@@ -41,12 +41,12 @@ void safety(){// Makeing the world safer
 		if(STOP == false){
 			STOP = true;
 			turnLEDOn(12);
-			wait(.5);
+			wait(.25);
 		}
 		else{
 			STOP = false;
 			turnLEDOff(12);
-			wait(.5);
+			wait(.25);
 		}
 	}
 
@@ -143,7 +143,7 @@ void FindLine(){//where am I?
 		else{
 			break;
 		}
-		wait(.1);
+		wait(.05);
 		try = try + 1;
 	}
 	try = 0;
@@ -162,7 +162,7 @@ void FindLine(){//where am I?
 		else{
 			break;
 		}
-		wait(.1);
+		wait(.05);
 		try = try + 1;
 	}
 	try = 0;
